@@ -18,10 +18,9 @@ window.addEventListener("load", function(e) {
 
          res.then(res => {
              
-             console.log(Object.values(res['Time Series (Daily)'])[0])
+             
              //pull out data for list
-             let data = Object.values(res['Time Series (Daily)'])[0]
-             console.log(data['1. open'])
+             
              if(res['Error Message'])
              {
                 const errTemplate =   `<p>Can't find stock quote</p>`
@@ -29,6 +28,7 @@ window.addEventListener("load", function(e) {
              }
              else
              {
+                let data = Object.values(res['Time Series (Daily)'])[0]
                 const successTemplate =   `
                 <ul>
                     <li>${res['Meta Data']['2. Symbol']}</li>
