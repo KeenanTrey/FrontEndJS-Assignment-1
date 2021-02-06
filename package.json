@@ -1,0 +1,20 @@
+{
+  "name": "assignment-1-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html  ",
+    "build": "parcel build index.html "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.11",
+    "http-server": "^0.12.3",
+    "parcel-bundler": "^1.12.4"
+  }
+}
